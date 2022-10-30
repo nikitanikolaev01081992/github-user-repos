@@ -4,13 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+import RootStoreContext from './context/RootStoreContext';
+import RootStore from './stores/RootStore';
+
+// ====================================================================================================================
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+	<React.StrictMode>
+		<RootStoreContext.Provider value={RootStore.getInstance()}>
+			<App />
+		</RootStoreContext.Provider>
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

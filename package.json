@@ -2,7 +2,7 @@
 	"name": "github-user-repos",
 	"version": "0.1.0",
 	"private": false,
-	"homepage": "https://nikitanikolaev01081992.github.io/github-user-repos/",
+	"homepage": "https://nikitanikolaev01081992.github.io/github-user-repos",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
